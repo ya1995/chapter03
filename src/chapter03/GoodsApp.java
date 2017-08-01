@@ -5,6 +5,7 @@ import mypackage.Goods2;
 public class GoodsApp {
 
 	public static void main(String[] args) {
+		System.out.println( "git test" );
 		Goods goods = new Goods();	//생성자 호출
 		// private 생성자는 내부에서만 접근이 가능
 		//goods.name = "nikon"; 오류남
