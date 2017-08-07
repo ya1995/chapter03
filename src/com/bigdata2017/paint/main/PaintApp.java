@@ -32,6 +32,17 @@ public class PaintApp {
 		draw( new Rectangle() );
 		draw( new Circle( 10, 20, 5 ) );
 		
+		//anonymous class object
+		Point[] points = new Point[10];
+		draw( new Drawable() {
+			@Override
+			public void draw() {
+				System.out.println( points );
+				System.out.println( "한번만 만들고 버릴 도형을 그렸습니다.");
+			}
+			
+		});
+		
 		//resize test
 		// resizeable( new Triangle() );
 		resize( new Triangle() );
